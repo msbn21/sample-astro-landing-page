@@ -10,10 +10,10 @@ import Button from "./Button.astro";
     max-width: 600px;
   }
 
-  input[type='text'],
-  input[type='email'],
-  input[type='date'],
-  input[type='tel'] {
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"] {
     width: 100%;
     padding: 0.5rem 1rem;
     border: 2px solid #ccc;
@@ -31,7 +31,19 @@ import Button from "./Button.astro";
   }
 </style>
 
-<form class="signup__form fade-in" action="">
-  <input type="email" placeholder="Email Address" required/>
+<form
+  class="signup__form fade-in"
+  action="https://gmail.us21.list-manage.com/subscribe/post"
+  method="POST"
+>
+  <input type="hidden" name="u" value="1d4859f57b22b0722dc640d93" />
+  <input type="hidden" name="id" value="525e64f592" />
+  <input
+    type="email"
+    placeholder="Email Address"
+    name="MERGE0"
+    id="MERGE0"
+    required
+  />
   <Button>Submit</Button>
 </form>
